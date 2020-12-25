@@ -10,4 +10,8 @@ defmodule ListAddBench do
   bench "add tail" do
     @list ++ [:a]
   end
+
+  bench "add long list" do
+  	@list ++ @list
+  end
 end
